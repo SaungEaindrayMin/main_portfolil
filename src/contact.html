@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" type="text/css" />
+    <link rel="stylesheet" href="./input.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#111111]">
+    <!-- start nav bar  -->
+
+    <section
+      class="shadow-lg shadow-[#FDBCB4]/50 py-3 lg:py-6 sticky top-0 w-full bg-[#111111]/90 z-10"
+    >
+      <nav class="lg:w-4/5 mx-3 lg:mx-auto relative">
+        <div class="flex justify-between items-center">
+          <div>
+            <img
+              src="./img/portfolio_logo.png"
+              alt="logo"
+              class="w-10 h-auto"
+            />
+          </div>
+
+          <ul
+            class="md:flex gap-6 text-lg items-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 hidden md:block"
+          >
+            <a href="index.html"><li class="hover:text-[#BEBFC5]">Home</li></a>
+            <a href="About.html"><li class="hover:text-[#BEBFC5]">About</li></a>
+            <a href="project.html"><li class="hover:text-[#BEBFC5]">Project</li></a>
+            <a href="contact.html"
+              ><li class="hover:text-[#BEBFC5]">Contact Me</li></a
+            >
+            <li>
+              <div
+                class="flex gap-4 items-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+              >
+                <a href="" class="text-2xl hover:text-[#BEBFC5]">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="" class="text-2xl hover:text-[#BEBFC5]">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+
+                <a href="" class="text-2xl hover:text-[#BEBFC5]">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- responsive  -->
+          <div class="block md:hidden">
+            <div class="humbugerContainer grid gap-1 absolute top-2 right-0 cursor-pointer">
+              <div
+                class="humbuger line1 bg-gradient-to-r from-pink-500 to-yellow-500 w-8 h-1 rounded-lg"
+              ></div>
+              <div
+                class="humbuger line2 bg-gradient-to-r from-pink-500 to-yellow-500 w-8 h-1 rounded-lg"
+              ></div>
+              <div
+                class="humbuger line3 bg-gradient-to-r from-pink-500 to-yellow-500 w-8 h-1 rounded-lg"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- end nav bar  -->
+
+    <main class="lg:w-4/5 mx-3 lg:mx-auto my-12">
+      <!-- start  intro section  -->
+      <section
+        class="bg-gradient-to-r from-pink-500 to-yellow-500 px-3 py-8 lg:px-6 lg:py-12 rounded-2xl"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="text-3xl lg:text-5xl text-white font-extrabold text-center">
+          <h1>Contact Me</h1>
+        </div>
+      </section>
+      <!-- end intro section  -->
+      <!-- start contact us section  -->
+      <section
+        id="contact"
+        class="grid md:flex items-center mb-[25%] lg:mb-[14%] gap-6 py-16 text-[#7B3F00]"
+      >
+        <div class="container w-full md:w-[50%] mx-auto" data-aos="fade-right"
+        data-aos-duration="1000">
+          <div
+            class="mx-[8%] p-8 border-2 border-rose-300 rounded-lg shadow-lg"
+          >
+            <form action="#" method="POST" class="space-y-6 text-white">
+              <div>
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <div class="mt-1">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    class="w-full p-3 border border-rose-300 bg-transparent rounded-lg focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium"
+                  >Email</label
+                >
+                <div class="mt-1">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    class="w-full p-3 border border-rose-300 bg-transparent rounded-lg focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium"
+                  >Message</label
+                >
+                <div class="mt-1">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    required
+                    class="w-full p-3 border border-rose-300 bg-transparent rounded-lg focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-pink-500 to-yellow-500 hover:bg-[#3D0C02] text-white font-bold py-3 rounded-lg shadow-md focus:outline-none focus:ring-1 focus:ring-yellow-500 transition duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="w-full md:w-[40%] grid gap-4 items-center" data-aos="fade-left"
+        data-aos-duration="1000">
+          <h2
+            class="text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 font-bold text-center mb-8"
+          >
+            Let's talk for something special
+          </h2>
+          <p class="text-xl text-[#8B8589] text-center">
+            Reach out to me directly
+          </p>
+          <div class="flex gap-6 mx-auto">
+            <a
+              href=""
+              class="w-10 h-auto text-2xl text-center rounded-2xl transform transition-transform hover:scale-105 hover:shadow-xl border border-yellow-500 hover:border-pink-500"
+            >
+              <i
+                class="fa-brands fa-telegram p-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+              ></i>
+            </a>
+
+            <a
+              href=""
+              class="w-10 h-auto text-2xl text-center rounded-2xl transform transition-transform hover:scale-105 hover:shadow-xl border border-yellow-500 hover:border-pink-500"
+            >
+              <i
+                class="fa-solid fa-file p-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+              ></i>
+            </a>
+
+            <a
+              href=""
+              class="w-10 h-auto text-2xl text-center rounded-2xl transform transition-transform hover:scale-105 hover:shadow-xl border border-yellow-500 hover:border-pink-500"
+            >
+              <i
+                class="fa-solid fa-envelope p-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+              ></i>
+            </a>
+
+            <a
+              href=""
+              class="w-10 h-auto text-2xl text-center rounded-2xl transform transition-transform hover:scale-105 hover:shadow-xl border border-yellow-500 hover:border-pink-500"
+            >
+              <i
+                class="fa-brands fa-linkedin p-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+              ></i>
+            </a>
+
+            <a
+              href=""
+              class="w-10 h-auto text-2xl text-center rounded-2xl transform transition-transform hover:scale-105 hover:shadow-xl border border-yellow-500 hover:border-pink-500"
+            >
+              <i
+                class="fa-brands fa-github p-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end contact us section  -->
+    </main>
+
+    <!-- responsive nav  -->
+    <div
+      class="overlayMenu block md:hidden text-white bg-[#111111]/90 fixed w-full h-[40%] top-8 left-0 grid justify-center items-center text-center opacity-0"
+    >
+      <ul
+        class="grid gap-3 text-xl items-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+      >
+        <a href="index.html"><li class="hover:text-[#BEBFC5]">Home</li></a>
+        <a href="About.html"><li class="hover:text-[#BEBFC5]">About</li></a>
+        <a href="project.html"><li class="hover:text-[#BEBFC5]">Project</li></a>
+        <a href="contact.html"
+          ><li class="hover:text-[#BEBFC5]">Contact Me</li></a
+        >
+        <li></li>
+        <li>
+          <div
+            class="flex gap-4 items-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500"
+          >
+            <a href="" class="text-2xl hover:text-[#BEBFC5]">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="" class="text-2xl hover:text-[#BEBFC5]">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <a href="" class="text-2xl hover:text-[#BEBFC5]">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- responsive nav  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
