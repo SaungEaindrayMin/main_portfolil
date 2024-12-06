@@ -20,3 +20,22 @@ hambugerContainerTag.addEventListener("click", () => {
         hambugerContainerTag.classList.add("isOpened");
     }
 })
+
+function SendMail(event) {
+    event.preventDefault();  // Prevent the default form submission behavior
+    
+    var params = {
+        from_name: document.getElementById("fullname").value,
+        email_id: document.getElementById("email_id").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_smrigdo", "template_zj1k001", params)
+        .then(function(response) {
+            alert("Success! Email sent: " + response.status);
+        })
+        .catch(function(error) {
+            alert("Failed to send email: " + error);
+        });
+}
+

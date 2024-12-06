@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        funnel: '"Funnel Sans", sans-serif',
+        funnel: "Funnel Sans, serif",
       },
       keyframes: {
         float: {
